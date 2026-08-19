@@ -85,20 +85,6 @@ const FEATURES = [
   },
 ];
 
-const MODULES = [
-  { name: "Killaura", tag: "Combat" },
-  { name: "Scaffold", tag: "World" },
-  { name: "Velocity", tag: "Combat" },
-  { name: "AutoClicker", tag: "Combat" },
-  { name: "Reach", tag: "Combat" },
-  { name: "Speed", tag: "Movement" },
-  { name: "Fly", tag: "Movement" },
-  { name: "ESP", tag: "Render" },
-  { name: "Tracers", tag: "Render" },
-  { name: "AutoTotem", tag: "Player" },
-  { name: "InvManager", tag: "Player" },
-  { name: "NoFall", tag: "Movement" },
-];
 
 const VERSIONS = ["1.8.9", "1.12.2", "1.16.5", "1.18.2", "1.20.4", "1.21"];
 
