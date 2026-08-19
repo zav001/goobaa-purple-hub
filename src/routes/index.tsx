@@ -22,6 +22,7 @@ import {
 import { ModuleExplorer } from "@/components/ModuleExplorer";
 import heroImage from "@/assets/hero-client.jpg";
 import gridTexture from "@/assets/texture-grid.jpg";
+import clientJar from "@/assets/GoobaaClient-1.21.11.jar.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -273,8 +274,10 @@ function Index() {
               Free, forever.
             </p>
             <div className="relative mt-9 flex flex-wrap justify-center gap-3">
-              <Button variant="hero" size="xl">
-                <Download /> Download for Windows
+              <Button variant="hero" size="xl" asChild>
+                <a href={clientJar.url} download="GoobaaClient-1.21.11.jar">
+                  <Download /> Download GoobaaClient 1.21.11 (.jar)
+                </a>
               </Button>
             </div>
           </div>
