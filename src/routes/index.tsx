@@ -19,6 +19,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { ModuleExplorer } from "@/components/ModuleExplorer";
 import heroImage from "@/assets/hero-client.jpg";
 import gridTexture from "@/assets/texture-grid.jpg";
 
