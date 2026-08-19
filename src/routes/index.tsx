@@ -26,18 +26,19 @@ import gridTexture from "@/assets/texture-grid.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Goobaa Client — Free Minecraft Utility Client" },
+      { title: "Goobaa Client — Free DonutSMP Utility Client" },
       {
         name: "description",
         content:
-          "Goobaa Client is a free, undetected Minecraft utility client with 200+ modules, ghost bypasses and buttery-smooth FPS. Download for 1.8.9 through 1.21.",
+          "Goobaa Client is a free DonutSMP utility client with 200+ modules, ghost bypasses and buttery-smooth FPS. Auto Totem, Anchor Macro, ESP, HUD and more.",
       },
-      { property: "og:title", content: "Goobaa Client — Free Minecraft Utility Client" },
+      { property: "og:title", content: "Goobaa Client — Free DonutSMP Utility Client" },
       {
         property: "og:description",
         content:
-          "200+ modules, ghost bypasses and buttery-smooth FPS. Download Goobaa Client free for Minecraft 1.8.9 – 1.21.",
+          "200+ modules built for DonutSMP: Auto Totem, Anchor Macro, ESP, Freecam and a fully themeable HUD. Free forever.",
       },
+
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
