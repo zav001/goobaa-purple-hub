@@ -19,24 +19,26 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { ModuleExplorer } from "@/components/ModuleExplorer";
 import heroImage from "@/assets/hero-client.jpg";
 import gridTexture from "@/assets/texture-grid.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Goobaa Client — Free Minecraft Utility Client" },
+      { title: "Goobaa Client — Free DonutSMP Utility Client" },
       {
         name: "description",
         content:
-          "Goobaa Client is a free, undetected Minecraft utility client with 200+ modules, ghost bypasses and buttery-smooth FPS. Download for 1.8.9 through 1.21.",
+          "Goobaa Client is a free DonutSMP utility client with 200+ modules, ghost bypasses and buttery-smooth FPS. Auto Totem, Anchor Macro, ESP, HUD and more.",
       },
-      { property: "og:title", content: "Goobaa Client — Free Minecraft Utility Client" },
+      { property: "og:title", content: "Goobaa Client — Free DonutSMP Utility Client" },
       {
         property: "og:description",
         content:
-          "200+ modules, ghost bypasses and buttery-smooth FPS. Download Goobaa Client free for Minecraft 1.8.9 – 1.21.",
+          "200+ modules built for DonutSMP: Auto Totem, Anchor Macro, ESP, Freecam and a fully themeable HUD. Free forever.",
       },
+
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -84,20 +86,6 @@ const FEATURES = [
   },
 ];
 
-const MODULES = [
-  { name: "Killaura", tag: "Combat" },
-  { name: "Scaffold", tag: "World" },
-  { name: "Velocity", tag: "Combat" },
-  { name: "AutoClicker", tag: "Combat" },
-  { name: "Reach", tag: "Combat" },
-  { name: "Speed", tag: "Movement" },
-  { name: "Fly", tag: "Movement" },
-  { name: "ESP", tag: "Render" },
-  { name: "Tracers", tag: "Render" },
-  { name: "AutoTotem", tag: "Player" },
-  { name: "InvManager", tag: "Player" },
-  { name: "NoFall", tag: "Movement" },
-];
 
 const VERSIONS = ["1.8.9", "1.12.2", "1.16.5", "1.18.2", "1.20.4", "1.21"];
 
@@ -171,12 +159,13 @@ function Index() {
                 Build 4.2 — now on 1.21
               </span>
               <h1 className="mt-6 font-display text-5xl leading-[0.98] font-bold sm:text-6xl lg:text-7xl">
-                The <span className="text-gradient">purple</span> utility client for Minecraft
+                The <span className="text-gradient">purple</span> client built for DonutSMP
               </h1>
               <p className="mt-6 max-w-lg text-lg text-muted-foreground">
-                Goobaa Client packs 200+ modules, ghost bypasses and a render engine that gives you
-                frames back. Free forever, updated weekly.
+                Goobaa Client packs 200+ modules tuned for DonutSMP — Auto Totem, Anchor Macro, ESP
+                and a render engine that gives you frames back. Free forever, updated weekly.
               </p>
+
               <div className="mt-9 flex flex-wrap gap-3">
                 <Button variant="hero" size="xl" asChild>
                   <a href="#download">
@@ -241,25 +230,17 @@ function Index() {
 
         <section id="modules" className="mx-auto max-w-6xl px-5 py-20">
           <div className="panel rounded-2xl p-8 sm:p-12">
-            <h2 className="font-display text-3xl font-bold sm:text-4xl">200+ modules, one GUI</h2>
+            <h2 className="font-display text-3xl font-bold sm:text-4xl">
+              Find your next favorite feature
+            </h2>
             <p className="mt-3 max-w-xl text-muted-foreground">
-              Search, bind and theme any module in seconds. Here's a taste of the roster.
+              Search the catalog, filter by category, then select a module to see what it does and
+              how it can be configured.
             </p>
-            <ul className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-              {MODULES.map((module) => (
-                <li
-                  key={module.name}
-                  className="flex items-center justify-between rounded-lg border border-border bg-secondary/40 px-4 py-3 transition-colors hover:border-primary/60 hover:bg-secondary/70"
-                >
-                  <span className="font-display text-sm font-semibold">{module.name}</span>
-                  <span className="rounded-full bg-primary/15 px-2.5 py-0.5 text-[11px] uppercase tracking-wider text-primary">
-                    {module.tag}
-                  </span>
-                </li>
-              ))}
-            </ul>
+            <ModuleExplorer />
           </div>
         </section>
+
 
         <section id="versions" className="mx-auto max-w-6xl px-5 py-20">
           <h2 className="font-display text-3xl font-bold sm:text-4xl">Supported versions</h2>
