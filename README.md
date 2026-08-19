@@ -1,14 +1,18 @@
-# Welcome to your Lovable project
+# Goobaa Client Hub
+
+Hello are u able to make me a website like 67Client.com / Kelpclient.com , but name everything Goobaa Client instead as a purple background
 
 This project was built with [Lovable](https://lovable.dev).
 
+**Live app**: https://goobaa-purple-hub.lovable.app
+
 ## Build with Lovable
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/acc77c56-8b80-45d7-b759-07b7f9ec5ee5).
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
@@ -20,10 +24,3 @@ cd <repository-name>
 npm i
 npm run dev
 ```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
