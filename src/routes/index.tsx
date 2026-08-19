@@ -159,12 +159,13 @@ function Index() {
                 Build 4.2 — now on 1.21
               </span>
               <h1 className="mt-6 font-display text-5xl leading-[0.98] font-bold sm:text-6xl lg:text-7xl">
-                The <span className="text-gradient">purple</span> utility client for Minecraft
+                The <span className="text-gradient">purple</span> client built for DonutSMP
               </h1>
               <p className="mt-6 max-w-lg text-lg text-muted-foreground">
-                Goobaa Client packs 200+ modules, ghost bypasses and a render engine that gives you
-                frames back. Free forever, updated weekly.
+                Goobaa Client packs 200+ modules tuned for DonutSMP — Auto Totem, Anchor Macro, ESP
+                and a render engine that gives you frames back. Free forever, updated weekly.
               </p>
+
               <div className="mt-9 flex flex-wrap gap-3">
                 <Button variant="hero" size="xl" asChild>
                   <a href="#download">
