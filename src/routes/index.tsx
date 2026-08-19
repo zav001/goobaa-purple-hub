@@ -241,25 +241,17 @@ function Index() {
 
         <section id="modules" className="mx-auto max-w-6xl px-5 py-20">
           <div className="panel rounded-2xl p-8 sm:p-12">
-            <h2 className="font-display text-3xl font-bold sm:text-4xl">200+ modules, one GUI</h2>
+            <h2 className="font-display text-3xl font-bold sm:text-4xl">
+              Find your next favorite feature
+            </h2>
             <p className="mt-3 max-w-xl text-muted-foreground">
-              Search, bind and theme any module in seconds. Here's a taste of the roster.
+              Search the catalog, filter by category, then select a module to see what it does and
+              how it can be configured.
             </p>
-            <ul className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-              {MODULES.map((module) => (
-                <li
-                  key={module.name}
-                  className="flex items-center justify-between rounded-lg border border-border bg-secondary/40 px-4 py-3 transition-colors hover:border-primary/60 hover:bg-secondary/70"
-                >
-                  <span className="font-display text-sm font-semibold">{module.name}</span>
-                  <span className="rounded-full bg-primary/15 px-2.5 py-0.5 text-[11px] uppercase tracking-wider text-primary">
-                    {module.tag}
-                  </span>
-                </li>
-              ))}
-            </ul>
+            <ModuleExplorer />
           </div>
         </section>
+
 
         <section id="versions" className="mx-auto max-w-6xl px-5 py-20">
           <h2 className="font-display text-3xl font-bold sm:text-4xl">Supported versions</h2>
