@@ -81,18 +81,18 @@ const FEATURES = [
   },
   {
     icon: MessageCircle,
-    title: "Live Support",
-    body: "A community of 40k+ players and staff answering in minutes, around the clock.",
+    title: "Built-in Help",
+    body: "Every module has a description and tooltip right in the client, so you always know what a setting does.",
   },
 ];
 
 
-const VERSIONS = ["1.8.9", "1.12.2", "1.16.5", "1.18.2", "1.20.4", "1.21"];
+const VERSIONS = ["1.21.11"];
 
 const STATS = [
   { value: "200+", label: "Modules" },
   { value: "40K+", label: "Players" },
-  { value: "6", label: "Versions" },
+  { value: "1", label: "Version" },
   { value: "0€", label: "Forever free" },
 ];
 
@@ -107,7 +107,7 @@ const FAQ = [
   },
   {
     q: "Which Minecraft versions are supported?",
-    a: "1.8.9 through 1.21, including the popular 1.12.2, 1.16.5, 1.18.2 and 1.20.4 builds. The installer picks the right one for you.",
+    a: "Goobaa Client is built specifically for Minecraft 1.21.11. Make sure your launcher is set to that version before installing.",
   },
   {
     q: "How do I install it?",
@@ -156,7 +156,7 @@ function Index() {
             <div>
               <span className="inline-flex items-center gap-2 rounded-full panel px-3.5 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-muted-foreground">
                 <Zap className="size-3.5 text-primary" />
-                Build 4.2 — now on 1.21
+                Build 4.2 — for 1.21.11
               </span>
               <h1 className="mt-6 font-display text-5xl leading-[0.98] font-bold sm:text-6xl lg:text-7xl">
                 The <span className="text-gradient">purple</span> client built for DonutSMP
@@ -275,9 +275,6 @@ function Index() {
             <div className="relative mt-9 flex flex-wrap justify-center gap-3">
               <Button variant="hero" size="xl">
                 <Download /> Download for Windows
-              </Button>
-              <Button variant="heroGhost" size="xl">
-                <MessageCircle /> Join the Discord
               </Button>
             </div>
           </div>
